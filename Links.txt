@@ -1,0 +1,11 @@
+OWASP Top 10 (2021) - https://owasp.org/Top10/
+CVSS 3.0 - https://www.first.org/cvss/calculator/3.0  https://nvd.nist.gov/vuln/detail/CVE-2022-22284
+JSON
+Необходимые ресурсы:
+• https://oasis-open.github.io/ctidocumentation/stix/examples
+• https://oasis-open.github.io/cti-stix-visualization/
+• https://oasis-open.github.io/ctidocumentation/resources#stix-21-specification
+• https://github.com/oasis-open/cti-stix2-jsonschemas/tree/master/examples
+
+ Операторы Google.
+https://www.exploit-db.com/google-hacking-database
