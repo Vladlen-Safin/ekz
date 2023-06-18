@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Согласие на обработку персональных данных</title>
+
+  <style>
+    * {
+      color: #000;
+      margin: 0;
+      font-family: "Times New Roman", serif;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      gap: 5mm;
+      padding: 20mm 25mm;
+      box-shadow: 0 0 3px gray;
+      height: 297mm;
+      width: 210mm;
+      margin: 10px auto;
+    }
+
+    .underline {
+      margin-bottom: -1px;
+      display: flex;
+      align-items: flex-end;
+      flex-grow: 1;
+      border-bottom: 1px solid black;
+      height: 27px;
+      padding: 0 5px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .first {
+      padding-left: 20px;
+      display: flex;
+      gap: 4px;
+    }
+
+    .date {
+      display: flex;
+      justify-content: flex-end;
+      text-align: end;
+      align-items: flex-end;
+    }
+
+    .date span {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      border-bottom: 1px solid #000;
+      height: 27px;
+      padding: 0 5px;
+      max-width: fit-content;
+    }
+
+    .day {
+      min-width: 20px;
+    }
+
+    .month {
+      min-width: 60px;
+    }
+
+    .year {
+      min-width: 30px;
+    }
+
+    .table-wrapper {
+      display: grid;
+      margin-right: 22mm;
+      grid-template-columns: 1.2fr 1.5fr 3fr;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      margin-bottom: 9px;
+    }
+
+    .table-item {
+      padding: 0px 10px 5px 10px;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      line-height: 108%;
+    }
+
+    .description {
+      text-align: center;
+      margin: 2px 0;
+    }
+
+    @media print {
+
+      *,
+      *:before,
+      *:after {
+        box-shadow: none;
+        text-shadow: none;
+      }
+
+      .page {
+        page-break-after: always;
+        box-shadow: none;
+        /* padding: 0;
+        margin: 0; */
+      }
+      
+      @page {
+        /* margin: 20mm 25mm; */
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="page">
+      <header class="header" style="text-align: center;">
+        <div class="wrapper">
+          <h2 style="text-transform: uppercase;">Согласие</h2>
+          <div>
+            <h2 style="display:flex; gap: 4px; justify-content: end;">№<span class="underline" id="approvalNumber"
+                style="min-width: 60px; max-width: fit-content;">4bcf06c52b23bc5f</span></h2>
+            <p style="font-size: 15px; text-align: center; margin: 2px 0;">(номер
+              согласия)</p>
+          </div>
+        </div>
+        <div><b>на обработку персональных данных</b></div>
+        <div class="date">&laquo;<span class="day"></span>&raquo;&nbsp;<span class="month"></span>&nbsp;<span
+            class="year"></span>г.</div>
+      </header>
+      <main style="flex-grow: 1;">
+        <div style="display: flex; gap: 1px; align-items: flex-end;">Я,<span class="underline"
+            style="padding: 0 5px;">Махмудов Дилшодбек Саттор Угли</span>,</div>
+        <div class="description">(Ф.И.О, в текстовом формате, внесенное на ПК)</div>
+        <div style="display:flex; gap: 3px; align-items: flex-end;">
+          <div class="underline" style="width: 119px; flex-grow: 0;"></div>серия<div class="underline"
+            style="width: 49px; flex-grow: 0;"></div>№<div class="underline" style="width: 49px; flex-grow: 0;"></div>
+          выдан<div class="underline"></div>
+        </div>
+        <div class="description">(вид документа, удостоверяющего личность)
+        </div>
+        <div style="display: flex; gap: 1px; align-items: flex-end;">
+          <div class="underline"></div>,
+        </div>
+        <div class="description">(когда и кем)</div>
+        <div style="display: flex; gap: 1px; align-items: flex-end;">
+          проживающий (ая) по адресу:
+          <div class="underline"></div>
+        </div>
+        <div style="display: flex; align-items: flex-end; gap: 1px; margin-top: 14px; margin-bottom: 3px;">
+          <div class="underline"></div>,
+        </div>
+        <p style="text-indent: 15mm;">во исполнение требований Федерального закона от
+          27.07.2006 г. № 152-ФЗ «О персональных данных», принимаю решение о предоставлении своих персональных данных, и,
+          сознательно, свободно, своей волей и в своем интересе даю свое согласие АНО ВО «Университет Иннополис»
+          (юридический адрес 420500, Республика Татарстан, г. Иннополис, ул. Университетская, д. 1) (далее – Университет)
+          на автоматизированную обработку своих персональных данных.</p>
+        <p style="text-indent: 15mm;"><b>Цель обработки персональных данных:</b></p>
+        <p>- осуществление процедуры прокторинга во время зачетных заданий;</p>
+        <p>- идентификация и аутентификация пользователя в системе.</p>
+        <p style="text-indent: 15mm;"><b>Согласие дается на обработку следующих персональных данных:</b></p>
+        <div class="table-wrapper">
+          <div class="table-item"><b>Тип персональных данных</b></div>
+          <div class="table-item"><b>Перечень персональных данных</b></div>
+          <div class="table-item"><b>Разрешенные действия (без ограничения)</b></div>
+          <div class="table-item">Биометрические персональные данные</div>
+          <div class="table-item">Фотографическое изображение лица</div>
+          <div class="table-item">сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение),
+            извлечение, использование, обезличивание, блокирование, удаление, уничтожение персональных данных.</div>
+        </div>
+        <div style="text-indent: 15mm;"><b>Срок обработки:</b></div>
+        <p style="text-indent: 15mm;">Данное Согласие действует с момента подписания до достижения целей обработки
+          (принятия
+          решения о неактуальности целей обработки) или до момента отзыва мной согласия.</p>
+        <div style="text-indent: 18mm;">Я ознакомлен(а), что:</div>
+        <p style="text-indent: 18mm;">- настоящее Согласие на обработку моих персональных данных может быть отозвано путем
+          направления заявления на почтовый адрес Университета. Университет вправе продолжить обработку персональных
+          данных без моего согласия при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6, части 2 статьи 10
+          и части 2 статьи 11 Федерального закона №152-ФЗ «О персональных данных» от 27.07.2006 г.</p>
+        <p style="text-indent: 18mm;">- имею право на доступ к своим персональным данным, задать вопрос по персональным
+          данным, требовать уточнения (обновления, изменения) моих персональных данных, а также удаления и уничтожения
+          моих персональных данных в случае их обработки Университетом способами, нарушающими мои законные права и
+          интересы, законодательство Российской Федерации;</p>
+        <p style="text-indent: 18mm;"><b>Я уведомлен, что мои персональные данные, указанные в настоящем согласии, будут
+            использовать только для перечисленных целей и не будут переданы третьим лицам.</b></p>
+        <p style="text-indent: 18mm;">Настоящим Согласием я подтверждаю, что являюсь субъектом предоставляемых
+          персональных данных, а также подтверждаю достоверность предоставляемых данных.</p>
+      </main>
+      <footer class="footer">
+        <div class="underline"></div>
+        <p>(дата, Ф.И.О., подпись лица, давшего согласие)</p>
+    </div>
+</body>
+
+</html>
